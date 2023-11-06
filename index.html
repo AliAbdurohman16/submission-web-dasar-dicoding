@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Web | Ali Abdurohman</title>
+    <!-- My Own Styles -->
+    <link rel="stylesheet" href="assets/styles/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="assets/scripts/script.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <button class="hamburger" onclick="toggleMenu()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" fill="#fff" />
+          </svg>
+        </button>
+
+        <ul id="navbarMenu">
+          <li><a href="#makanan">Makanan</a></li>
+          <li><a href="#minuman">Minuman</a></li>
+          <li><a href="#wisata">Wisata</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="content">
+        <article id="makanan" class="card">
+          <section>
+            <div class="slideshow-container">
+              <div class="slideshow fade">
+                <img
+                  class="feature-image"
+                  src="assets/images/article/empal-gentong-1.jpeg"
+                  alt="empal-gentong-1"
+                />
+              </div>
+          
+              <div class="slideshow fade">
+                <img
+                  class="feature-image"
+                  src="assets/images/article/empal-gentong-2.jpeg"
+                  alt="empal-gentong-2"
+                />
+              </div>
+          
+              <div class="slideshow fade">
+                <img
+                  class="feature-image"
+                  src="assets/images/article/empal-gentong-3.jpg"
+                  alt="empal-gentong-3"
+                />
+              </div>
+          
+              <a class="prev" onclick="plusSlides1(-1)">❮</a>
+              <a class="next" onclick="plusSlides1(1)">❯</a>
+            </div>
+            <br />
+          
+            <div style="text-align: center">
+              <span class="dot" onclick="currentSlide1(1)"></span>
+              <span class="dot" onclick="currentSlide1(2)"></span>
+              <span class="dot" onclick="currentSlide1(3)"></span>
+            </div>
+          </section>          
+          <h2>Empal Gentong</h2>
+          <p>Empal gentong menjadi kuliner primadona yang banyak diburu oleh wisatawan lokal maupun dari luar daerah. Rasanya kurang afdol jika berkunjung ke Cirebon tidak menikmati empal gentong.</p>
+          <p>Salah satu warung Empal Gentong yang dapat dikunjungi terletak di Jl. Doktor Sutomo Cirebon. Warungnya cukup sederhana, di depannya terdapat tulisan Empal Gentong yang cukup mencolok dan beberapa buah kelapa muda.</p>
+          <p>Menu andalan di warung makan ini adalah empal gentong dengan isian daging sapi dan tulang muda. Daging sapi dan tulang muda disiram dengan kuah empal gentong yang bersantan menjadikan kuliner empal gentong di warung ini beda dibandingkan dengan warung empal lainnya.</p>
+          <p>Es kelapa mudanya menjadi penutup hidangan yang menyegarkan apalagi jika diminum di siang hari. Waktu yang tepat untuk menyantap kuliner ini sekitar pukul 12.00 WIB karena daging dan tulang mudanya sudah dimasak dengan sempurna.</p>
+        </article>
+
+        <article id="minuman" class="card">
+          <section>
+            <div class="slideshow-container">
+              <div class="slideshow fade">
+                <img
+                  class="feature-image"
+                  src="assets/images/article/es-cuing-1.jpg"
+                  alt="es-cuing-1"
+                />
+              </div>
+          
+              <div class="slideshow fade">
+                <img
+                  class="feature-image"
+                  src="assets/images/article/es-cuing-2.jpg"
+                  alt="es-cuing-2"
+                />
+              </div>
+          
+              <a class="prev" onclick="plusSlides2(-1)">❮</a>
+              <a class="next" onclick="plusSlides2(1)">❯</a>
+            </div>
+            <br />
+          
+            <div style="text-align: center">
+              <span class="dot" onclick="currentSlide2(1)"></span>
+              <span class="dot" onclick="currentSlide2(2)"></span>
+            </div>
+          </section>          
+          <h2>Es Cuing</h2>
+          <p>Mendengar nama sajian menyegarkan satu ini mungkin masih sangat terdengar asing. Es Cuing sendiri merupakan minuman khas Cirebon yang terbuat dari cincau dan kemudian disajikan dengan bumbur sumsum hijau berbahan dasar tepung beras.</p>
+          <p>Agar semakin enak, biasanya diberi tambahan berupa es serut, lalu disiram santan dan kemudian ditambah gula merah sebagai pemanis. Nama Cuing diambil dari bahasa Cirebon, yang artinya adalah cincau.</p>
+          <p>Dari sekian banyaknya pedagangnya, Es Cuing di Jalan Kartini, Cirebon adalah yang paling terkenal lezat. Untuk seporsinya, biasanya dibanderol hanya sekitar 5 ribuan saja. Udah enak, murah, mengenyangkan lagi!</p>
+        </article>
+
+        <article id="wisata" class="card">
+          <img class="feature-image" src="assets/images/article/ade-irma.png" alt="ade-irma">
+          <h2>Cirebon Waterland Taman Ade Irma Suryani</h2>
+          <p>Setelah sempat terabaikan, Taman Ade Irma Suryani (TAIS) berubah menjadi taman air bernama Cirebon Waterland. Tempat ini buka sejak pukul 07.00 hingga 21.00 WIB.</p>
+          <p>Tak sekadar kolam renang, kamu juga akan menemukan banyak spot kece, seperti pondok ikonik dan restoran bergaya kapal laut.</p>
+          <p><strong>Alamat: </strong> Jl. Yos Sudarso No.1, Lemahwungkuk, Kec. Lemahwungkuk, Kota Cirebon, Jawa Barat</p>
+        </article>
+      </div>
+
+      <aside>
+        <article class="profile card">
+          <header>
+            <h2>About Me</h2>
+            <figure>
+              <img
+                class="personal-image"
+                src="assets/images/personal/ali.JPG"
+                alt="AliAbdurohman"
+              />
+              <figcaption>Creator this website</figcaption>
+            </figure>
+          </header>
+
+          <section>
+            <h3 class="information">Informasi Detail</h3>
+            <table aria-label="informasi">
+              <tr>
+                <th>Nama</th>
+                <td>Ali Abdurohman</td>
+              </tr>
+              <tr>
+                <th>TTL</th>
+                <td>Cirebon, 16 September 2002</td>
+              </tr>
+              <tr>
+                <th>Bahasa</th>
+                <td>Sunda, Indonesia</td>
+              </tr>
+              <tr>
+                <th>Hobi</th>
+                <td>Sepak Bola, Futsal, Badminton</td>
+              </tr>
+            </table>
+          </section>
+        </article>
+      </aside>
+    </main>
+
+    <footer>
+      <p>
+        Made with full <i class="fa fa-heart"></i> By Ali Abdurohman | 2023
+      </p>
+    </footer>
+  </body>
+</html>
